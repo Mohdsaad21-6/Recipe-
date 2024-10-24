@@ -1,0 +1,38 @@
+.main{
+    background-color: #1a2238;
+}
+.slider{
+    
+}
+.famous{
+    color: white;
+    margin-top: 5px;
+    margin-left: 30px;
+    font-family: serif;
+}
+.slider {
+    position: relative; /* Set relative positioning for the slider */
+}
+  
+.overlay-text {
+    position: absolute; /* Position the text absolutely */
+    top: 86%; /* Center vertically */
+    left: 30%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust positioning to center */
+    color: white; /* Text color */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+    padding: 10px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center the text */
+ }
+.slider img{
+    border-radius: 5px;
+    border: 2px solid red;
+    transition: transform 0.3 ease;
+}
+
+.slider img:hover{
+    /* transform: translateZ(200px); */
+    transform: ;
+    border: 2px solid gray;
+}
