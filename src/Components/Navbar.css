@@ -1,0 +1,16 @@
+.navbar {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar:hover {
+    background-color: #343a40; /* Darker shade for hover */
+    color: white; /* Change text color on hover */
+  }
+  
+  .navbar .nav-link {
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #ff69b4; /* Change link color on hover */
+  }

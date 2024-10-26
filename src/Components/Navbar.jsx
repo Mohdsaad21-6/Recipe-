@@ -1,11 +1,14 @@
+import './Navbar.css'; 
+
 const Navbar = () => {
   return (
     <>
       <nav
-        className="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-body "
+
+        className="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-body  fixed-top"
         data-bs-theme="dark"
       >
-        <div className="container-fluid">
+        <div className="container-fluid ">
           <a
             className="navbar-brand"
             style={{
