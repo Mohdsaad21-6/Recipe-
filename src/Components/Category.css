@@ -1,0 +1,33 @@
+
+   .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensures that the image does not overflow the card */
+    height: 100%; /* Ensures the card takes full height of its container */
+    /* backdrop-filter: blur(30px);
+    box-shadow: 10px 10px 20px #111,
+    -10px 10px 20px #ddd; */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(30px);
+    box-shadow: 10px 10px 20px #111,
+    -10px 10px 20px #f2e4ad; 
+  }
+  
+  .card-img-top {
+    width: 100%; /* Ensures the image takes the full width of the card */
+    height: 200px; /* Fixed height for the image */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+  }
+  
+  .card-body {
+    display: flex;
+    align-items: center; /* Centers content vertically */
+  }
+  .glass{
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(20px);
+  }
