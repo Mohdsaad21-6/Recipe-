@@ -49,7 +49,7 @@ const navigate =useNavigate();
             className="collapse navbar-collapse   float-end"
             id="navbarSupportedContent"
           >
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0" style={{marginLeft:"53%"}}>
               <Link
                 className="nav-item"
                 style={{ textDecoration: "none" }}

@@ -1,4 +1,4 @@
-.container {
+/* .container {
 }
 .image img {
   margin-top: 50%;
@@ -14,13 +14,14 @@
 }
 .text {
   padding: 5px 180px 50px;
-}
+}*/
 
 .glow {
   font-size: 30px;
   color: gray;
   animation: glow 1s ease-in-out infinite alternate;
 }
+
 
 @-webkit-keyframes glow {
   from {
@@ -31,5 +32,49 @@
   to {
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
       0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+} 
+.container {
+  max-width: 1200px; /* Max width for larger screens */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Padding for all sides */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Default to one column */
+  gap: 20px; /* Space between items */
+}
+
+.image img {
+  max-width: 90%; /* Responsive image */
+  height: 80%; /* Maintain aspect ratio */
+  box-shadow: 20px 20px grey;
+}
+
+.text {
+  color: white;
+  text-align: justify;
+  font-family: cursive;
+}
+
+.glow {
+  color: white;
+  margin: 0; /* Reset margin */
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
+  }
+
+  .text {
+    margin-left: -10%; /* Adjust margin for larger screens */
+  }
+}
+
+@media (min-width: 1200px) {
+  .text {
+    margin-left: 0; /* Reset margin for extra large screens */
   }
 }
